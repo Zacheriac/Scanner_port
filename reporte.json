@@ -1,0 +1,70 @@
+{
+  "host": "127.0.0.1",
+  "ip": "127.0.0.1",
+  "fecha": "2026-07-20T23:14:40.115098",
+  "duracion_segundos": 1.13,
+  "so_estimado": "",
+  "puertos_escaneados": 20,
+  "puertos_abiertos": [
+    {
+      "puerto": 135,
+      "estado": "abierto",
+      "servicio": "MSRPC",
+      "banner": "",
+      "version": "",
+      "riesgo_nivel": "MEDIO",
+      "riesgo_motivo": "MSRPC; usado en varios exploits de movimiento lateral en Windows",
+      "mitre_id": "T1046",
+      "mitre_nombre": "Network Service Discovery",
+      "mitre_url": "https://attack.mitre.org/techniques/T1046/"
+    },
+    {
+      "puerto": 445,
+      "estado": "abierto",
+      "servicio": "SMB",
+      "banner": "",
+      "version": "",
+      "riesgo_nivel": "ALTO",
+      "riesgo_motivo": "SMB; históricamente explotado por EternalBlue/WannaCry (MS17-010)",
+      "mitre_id": "T1021.002",
+      "mitre_nombre": "Remote Services: SMB/Windows Admin Shares",
+      "mitre_url": "https://attack.mitre.org/techniques/T1021/002/"
+    },
+    {
+      "puerto": 1433,
+      "estado": "abierto",
+      "servicio": "MSSQL",
+      "banner": "",
+      "version": "",
+      "riesgo_nivel": "MEDIO",
+      "riesgo_motivo": "MSSQL expuesto; objetivo común de fuerza bruta si no está restringido",
+      "mitre_id": "T1046",
+      "mitre_nombre": "Network Service Discovery",
+      "mitre_url": "https://attack.mitre.org/techniques/T1046/"
+    },
+    {
+      "puerto": 3306,
+      "estado": "abierto",
+      "servicio": "MySQL",
+      "banner": "J\u0000\u0000\u0000",
+      "version": "",
+      "riesgo_nivel": "MEDIO",
+      "riesgo_motivo": "MySQL expuesto; debería limitarse solo a red interna",
+      "mitre_id": "T1046",
+      "mitre_nombre": "Network Service Discovery",
+      "mitre_url": "https://attack.mitre.org/techniques/T1046/"
+    },
+    {
+      "puerto": 5432,
+      "estado": "abierto",
+      "servicio": "PostgreSQL",
+      "banner": "",
+      "version": "",
+      "riesgo_nivel": "MEDIO",
+      "riesgo_motivo": "PostgreSQL expuesto; debería limitarse solo a red interna",
+      "mitre_id": "T1046",
+      "mitre_nombre": "Network Service Discovery",
+      "mitre_url": "https://attack.mitre.org/techniques/T1046/"
+    }
+  ]
+}
